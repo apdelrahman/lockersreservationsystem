@@ -4,10 +4,11 @@
 // $user= "root"; // root is default value until you change it 
 // $pass= "Ab*015*200#";
 
-$serverName = getenv('DB_HOST');
-$userName = getenv('DB_USER');
-$password = getenv('DB_PASS');
-$dbName = getenv('DB_NAME');
+$serverName = getenv('localhost');
+$userName = getenv('root');
+$password = getenv('Ab*015*200#');
+$dbName = getenv('lockerbookingsystemdb');
+
 
 // Now we will check if the connection is ok or no
 
