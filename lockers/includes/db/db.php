@@ -5,7 +5,7 @@
 // $password = "Ab*015*200#";
 // $dbName = "lockerbookingsystemdb";
 
-$serverName = getenv('127.0.0.1');
+$serverName = getenv('localhost');
 $userName = getenv('root');
 $password = getenv('Ab*015*200#');
 $dbName = getenv('lockerbookingsystemdb');
