@@ -1,0 +1,31 @@
+Create Real DataBase For lockers booking system Website  
+Number Of Table (4)
+
+1- users =====> user_id           int 11 primary key auto increment 
+         =====> full_name          varchar 255 
+         =====> email             varchar 255
+         =====>password           varchar 255 
+         =====>role               enum  'user','admin'
+         =====>locker_id          int 11 Null    related with the id of locker_id from lockers table 
+         =====>created_at         timestamp null 
+
+===========================================================
+
+2-lockers   =====> locker_id   int 11 primary key auto increment 
+             =====> floor         varchar 255 
+             =====>status         enum 'avilable','reserved'
+             =====>content        varchar  1000 
+             =====>college_id     int 11   Null  related with the id of college_id from colleges table
+
+=============================================================
+
+3-reservations  =====> reservation_id       int 11 primary key auto increment 
+             =====> locker_id     int 11  related with the id of locker_id from lockers table
+             =====> user_id     int 11  related with the id of user_id from users table
+             =====>reservation_date     timestamp null 
+             
+
+===============================================================
+4-colleges ======>college_id      int 11 primary key auto increment
+           ======>college_name       varchar 255
+           
