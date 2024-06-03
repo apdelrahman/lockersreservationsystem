@@ -1,10 +1,15 @@
 <?php
+// Start or resume the session
 session_start();
-session_destroy();
 
-include ('includes/db/db.php');
-include ('includes/templates/header.php');
-include ('includes/templates/navbar.php');
+// Include database connection
+include_once 'includes/db/db.php';
+
+// Include header
+include_once 'includes/templates/header.php';
+
+// Include navbar
+include_once 'includes/templates/navbar.php';
 ?>
 <div class="home homepage min-vh-100">
   <div class="container">
@@ -22,11 +27,12 @@ include ('includes/templates/navbar.php');
         </ul>
       </div>
       <div class="w-100 d-flex justify-content-center align-items-center gap-3">
-        <a class="btn btn-info px-5 fw-bold " href="./login.php">تسجيل الدخول</a>
+        <a class="btn btn-info px-5 fw-bold" href="./login.php">تسجيل الدخول</a>
       </div>
     </div>
   </div>
 </div>
 <?php
-include ('includes/templates/footer.php');
+// Include footer
+include_once 'includes/templates/footer.php';
 ?>
