@@ -5,10 +5,10 @@
 // $password = "Ab*015*200#";
 // $dbName = "lockerbookingsystemdb";
 
-$serverName = getenv('DB_HOST');
-$userName = getenv('DB_USER');
-$password = getenv('DB_PASS');
-$dbName = getenv('DB_NAME');
+$serverName = getenv('127.0.0.1');
+$userName = getenv('root');
+$password = getenv('Ab*015*200#');
+$dbName = getenv('lockerbookingsystemdb');
 
 try {
     $conn = new PDO("mysql:host=$serverName;dbname=$dbName", $userName, $password);
